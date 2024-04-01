@@ -1,0 +1,65 @@
+##########
+# collectionbuilder-gh
+# Jekyll Digital Collection Generator, designed for GitHub Pages
+# https://github.com/Lauren-Pearson1/Pearson_archivaldescription
+##########
+
+##########
+# URL VARIABLES [optional if using GitHub Pages!]
+#
+# url is site domain, full URL to the production location of your collection
+# on GitHub Pages follows the pattern username.github.io
+#url: https://pPearson_archivaldescription.github.io 
+# baseurl is path to location on the domain if necessary e.g. /digital/hjccc
+# on GitHub Pages it is your github repository's name prefixed with a /
+#baseurl: /Pearson_archivaldescription 
+# location of code, the full url to your github repository
+source-code: https://github.com/Lauren-Pearson1/Pearson_archivaldescription
+
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
+title: Pearson Photograph Collection
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: a collection of photographs from trips
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "Pearson Photograph Collection is a collection of photographs from trips that the Pearson family went on."
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: Lauren Pearson
+
+##########
+# COLLECTION SETTINGS
+#
+# Set the metadata for your collection (the name of the csv file in your _data directory that describes the objects in your collection) 
+# Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
+metadata-csv: https://docs.google.com/spreadsheets/d/e/2PACX-1vSYxJwoQp2m8h-_kSz67BQZgSsrkfjhq-uD9DUg0Ufhk3tIJ0O9yLZW1dxdz-Fyn_QCM9kHfbaE2FG9/pub?output=csv
+
+##########
+# Site/Organization Branding 
+#   Uncomment these and enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
+#
+# organization-name: "University of North Carolina Greensboro"
+# organization-link:
+# organization-logo-banner: 
+# organization-logo-nav: 
+
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
+##########
+# BUILD SETTINGS 
+#
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)
+#
+# ignore stuff
+exclude: [docs/, Rakefile, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md]
+# compress CSS output
+sass:
+  style: compressed
